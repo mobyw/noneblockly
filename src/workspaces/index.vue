@@ -237,7 +237,8 @@ body {
 }
 </style>
 <script lang="ts">
-import "highlight.js/lib/common";
+import hljs from "highlight.js/lib/core";
+import python from "highlight.js/lib/languages/python";
 import hljsVuePlugin from "@highlightjs/vue-plugin";
 import {
   mdiContentSave,
@@ -248,6 +249,8 @@ import {
   mdiThemeLightDark,
   mdiLanguagePython,
 } from "@mdi/js";
+
+hljs.registerLanguage("python", python);
 
 // const example_code = `\
 // from nonebot.rule import to_me

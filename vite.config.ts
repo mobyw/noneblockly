@@ -5,7 +5,6 @@ import vuetify from "vite-plugin-vuetify";
 // Utilities
 import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "node:url";
-import { splitVendorChunkPlugin } from "vite";
 
 // Vite
 import { viteStaticCopy } from "vite-plugin-static-copy";
@@ -61,7 +60,6 @@ export default defineConfig({
         },
       ],
     }),
-    splitVendorChunkPlugin(),
   ],
   define: { "process.env": {} },
   resolve: {
