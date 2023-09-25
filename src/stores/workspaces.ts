@@ -59,8 +59,8 @@ export function saveJSON() {
   outputsStore.snackbarColor = "green";
   outputsStore.snackbarMsg = "🤗 工作区已暂存";
   outputsStore.snackbar = true;
-  console.log("工作区已暂存：");
-  console.log(json);
+  // console.log("工作区已暂存：");
+  // console.log(json);
 }
 
 export function loadJSON() {
@@ -88,8 +88,8 @@ export function generateCode() {
   let workspace = Blockly.getMainWorkspace();
   outputsStore.code = pythonGenerator.workspaceToCode(workspace);
   // outputsStore.activeTab = "tab-2";
-  console.log("已生成代码：");
-  console.log(outputsStore.code);
+  // console.log("已生成代码：");
+  // console.log(outputsStore.code);
 }
 
 export function showCode() {
