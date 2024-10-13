@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, shallowRef } from "vue";
+import { onMounted } from "vue";
 // Components
 import ContentCard from "@/components/ContentCard.vue";
 import BlocklyTab from "@/components/BlocklyTab.vue";
@@ -29,6 +29,7 @@ pythonGenerator.addReservedWords(
   "json,Annotated,Matcher,Message,EventMessage,CommandArg,on_command,on_message,on_alconna,to_me",
 );
 
+// @ts-ignore
 Blockly.setLocale(ZhHans);
 
 // Set store data
